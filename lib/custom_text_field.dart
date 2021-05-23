@@ -12,7 +12,7 @@ class CustomTextField extends StatelessWidget {
       {@required this.placeholder,
       @required this.textController,
       this.borderColor = Colors.black,
-      this.inputWidth = 200,
+      this.inputWidth = 250,
       this.textColor = Colors.black});
 
   @override
@@ -20,7 +20,7 @@ class CustomTextField extends StatelessWidget {
     return Container(
       width: this.inputWidth,
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(10),
           border: Border.all(color: this.borderColor, width: 1)),
       child: Padding(
         padding: const EdgeInsets.all(5),

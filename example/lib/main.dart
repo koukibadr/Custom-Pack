@@ -26,11 +26,16 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         body: Container(
+          width: double.infinity,
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CustomTextField(
                   placeholder: "Login",
                   textController: new TextEditingController()),
+              SizedBox(
+                height: 20,
+              ),
               CustomButton(
                   buttonText: 'Login',
                   backgroundColor: Colors.orange,

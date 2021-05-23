@@ -22,15 +22,18 @@ class CustomButton extends StatelessWidget {
       width: this.buttonSize,
       height: this.buttonHeight,
       decoration: BoxDecoration(
-          color: this.backgroundColor, borderRadius: BorderRadius.circular(20)),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          Text(
-            this.buttonText,
-            style: TextStyle(color: this.textColor),
-          )
-        ],
+          color: this.backgroundColor, borderRadius: BorderRadius.circular(10)),
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Text(
+              this.buttonText,
+              style: TextStyle(color: this.textColor),
+            )
+          ],
+        ),
       ),
     );
   }
